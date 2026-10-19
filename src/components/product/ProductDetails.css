@@ -1,0 +1,138 @@
+/* Product Details Section */
+.product-details-container {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.back-button {
+  margin-bottom: 20px;
+}
+
+.product-details-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Images Section */
+.product-images-section {
+  flex: 1;
+  max-width: 450px;
+  width: 100%;
+}
+
+.main-image-container {
+  width: 100%;
+  height: 320px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.thumbnails-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.thumbnail-button {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px;
+  background-color: #fff;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.thumbnail-button:hover {
+  border-color: #999;
+}
+
+.thumbnail-button.active {
+  border: 2px solid #0066cc;
+}
+
+.thumbnail-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Info Section */
+.product-info-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-title {
+  font-size: 22px;
+  color: #111;
+  margin: 6px 0 8px;
+}
+
+.details-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1a7f37;
+  margin-bottom: 12px;
+}
+
+.btn-add-cart-details {
+  align-self: flex-start;
+  padding: 9px 20px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.details-description-box {
+  border-top: 1px solid #eee;
+  padding-top: 14px;
+  margin-top: 8px;
+}
+
+.details-description-box h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.details-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-details-content {
+    flex-direction: column;
+  }
+
+  .product-images-section {
+    max-width: 100%;
+  }
+
+  .main-image-container {
+    height: 250px;
+  }
+}

@@ -1,4 +1,4 @@
-
+/* Header & Navigation */
 .header {
   display: flex;
   justify-content: space-between;
@@ -21,6 +21,13 @@
   margin-top: 2px;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .user-nav {
   display: flex;
   align-items: center;
@@ -35,10 +42,79 @@
   color: #444;
 }
 
+/* Cart Header Widget */
+.cart-widget {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.cart-badge {
+  font-size: 14px;
+  color: #222;
+}
+
+.cart-pending {
+  color: #0066cc;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.failure-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+  border-left: 1px solid #ccc;
+  padding-left: 8px;
+}
+
+.failure-toggle input {
+  cursor: pointer;
+}
+
+/* Cart Error Banner */
+.cart-error-banner {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.btn-dismiss-error {
+  background: none;
+  border: none;
+  color: #842029;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+/* Responsive adjustments */
 @media (max-width: 600px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
   }
 
   .user-nav,
@@ -46,5 +122,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+  }
+
+  .cart-widget {
+    width: 100%;
+    justify-content: space-between;
   }
 }
